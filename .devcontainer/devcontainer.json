@@ -1,0 +1,21 @@
+{
+    "name": "raven",
+    "dockerComposeFile": "docker-compose.yaml",
+    "service": "bgpspeaker",
+    "workspaceFolder": "/workspace",
+    "forwardPorts": [179],
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "rust-lang.rust-analyzer",
+                "swellaby.vscode-rust-test-adapter",
+                "be5invis.toml",
+                "mhutchie.git-graph",
+                "oderwat.indent-rainbow",
+                "wayou.vscode-todo-highlight",
+                "fabiospampinato.vscode-todo-plus"
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  bgpspeaker:
+    image: rust:1.69.0
+    hostname: bgpspeaker
+    container_name: bgpspeaker
+    working_dir: "/home/bgpspeaker"
+    volumes:
+      - ..:/workspace:cached
+    command: /bin/sh -c "while :; do sleep 10; done"
