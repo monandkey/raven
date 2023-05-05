@@ -6,7 +6,7 @@ services:
     container_name: bgpspeaker
     working_dir: "/home/bgpspeaker"
     volumes:
-      - ..:/workspace:cached
+      - ../component/bgpspeaker/:/workspace:cached
     command: /bin/sh -c "while :; do sleep 10; done"
 
   keepalived:
